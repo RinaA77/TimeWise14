@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue_light"
+    android:padding="16dp"
+    tools:context=".AddEditReminderActivity">
+
+    <TextView
+        android:id="@+id/tv_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Pengingat Baru"
+        android:textSize="24sp"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_form_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Pengingat"
+            android:inputType="textCapSentences"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/color_black_dark" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_select_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pilih Tanggal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/color_pink_light"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/til_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_selected_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal: Belum dipilih"
+        android:textSize="16sp"
+        android:textColor="@color/color_black_dark"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_select_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pilih Jam"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/color_pink_light"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_selected_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_selected_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jam: Belum dipilih"
+        android:textSize="16sp"
+        android:textColor="@color/color_black_dark"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_save_reminder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan Pengingat"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/color_purple_light"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_selected_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
