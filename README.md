@@ -9,7 +9,7 @@ Aplikasi android pengingat berbasis waktu yang dikembangkan sebagai tugas UAS ma
 - Notifikasi otomatis saat waktu pengingat tiba
 
 
-🧰 TPendukung
+🧰 Pendukung
 
 1. Bahasa: Java
 2. Aplikasi : Android Studio
@@ -42,5 +42,5 @@ Aplikasi android pengingat berbasis waktu yang dikembangkan sebagai tugas UAS ma
 
 Alip Setiawan  – Penjelasan Splash & MainActivity
 Rina Afiyanti – Form Add/Edit Reminder
-Duta Hardhia – Struktur Database
-Elma Alviana – ViewModel, Repository, Notifikasi
+Elma Alviana – Struktur Database
+Duta Hardhia – ViewModel, Repository, Notifikasi
